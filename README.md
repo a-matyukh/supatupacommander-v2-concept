@@ -2,7 +2,7 @@
 
 SupatupaCommander - open-source file manager for creative people.
 
-Concept site - .
+Concept site - [https://supatupacommander-v2-concept.vercel.app/](https://supatupacommander-v2-concept.vercel.app/).
 
 Storybook:
 
