@@ -12,6 +12,6 @@ img:hover {
 }
 </style>
 
-<script lang="ts">
+<script>
 let {nav_enabled, ontoggle} = $props()
 </script>

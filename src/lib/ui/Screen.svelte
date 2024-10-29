@@ -40,11 +40,6 @@ header {
     border-bottom: 1px solid #ccc;
     border-radius: 10px 10px 0 0;
 }
-main {
-    /* height: calc(100vh - 60px); */
-    /* overflow: auto; */
-    background-color: bisque;
-}
 </style>
 <script>
 import Workspace from './workspace/Workspace.svelte'

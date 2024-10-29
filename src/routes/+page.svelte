@@ -1,5 +1,5 @@
 <Screen />
 
 <script>
-import Screen from "$lib/ui/Screen.svelte";
+import Screen from "$lib/ui/Screen.svelte"
 </script>

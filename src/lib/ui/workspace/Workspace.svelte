@@ -30,14 +30,7 @@ button.selected {
     background-color: #033865;
 }
 footer {
-    /* padding: 5px; */
     background-color: #02233f;
-}
-
-main {
-    /* height: calc(100vh - 60px); */
-    /* overflow: auto; */
-    background-color: bisque;
 }
 </style>
 <script>

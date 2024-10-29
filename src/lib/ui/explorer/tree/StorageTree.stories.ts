@@ -1,5 +1,5 @@
 import StorageTree from './StorageTree.svelte'
-import { files } from './data.js'
+import { storage_tree } from '../../../data/sample_data.js'
 
 export default {
 	title: 'Explorer/StorageTree',
@@ -9,6 +9,7 @@ export default {
 
 export const First = {
 	args: {
-		tree: files
+		name: "Working",
+		tree: storage_tree
 	}
 }

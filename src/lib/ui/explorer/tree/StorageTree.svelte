@@ -1,6 +1,6 @@
-<Folder name="Working" files={tree} expanded />
+<Folder {name} files={tree} expanded />
 
 <script>
 import Folder from './Folder.svelte'
-let {tree} = $props()
+let {name, tree} = $props()
 </script>
