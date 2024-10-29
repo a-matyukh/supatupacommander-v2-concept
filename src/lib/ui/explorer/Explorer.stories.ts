@@ -1,4 +1,5 @@
 import Explorer from './Explorer.svelte'
+import { storage_name, storage_tree, breadcrumbs, selected_widget } from '$lib/data/sample_data'
 
 export default {
 	title: 'Explorer/Explorer',
@@ -8,6 +9,6 @@ export default {
 
 export const Enabled = {
 	args: {
-		nav_enabled: true
+		storage_name, storage_tree, breadcrumbs, selected_widget
 	}
 }

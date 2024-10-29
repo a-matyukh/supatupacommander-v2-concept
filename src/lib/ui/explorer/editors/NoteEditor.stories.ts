@@ -1,5 +1,5 @@
 import NoteEditor from './NoteEditor.svelte'
-import { selected_widget_note, selected_widget_note_with_bg } from "$lib/data/sample_data"
+import { sample_notewidget_1, sample_notewidget_2 } from "$lib/data/sample_data"
 
 export default {
     title: 'Editors/NoteEditor',
@@ -11,9 +11,9 @@ export default {
 }
 
 export const without_bg = {
-	args: selected_widget_note
+	args: sample_notewidget_1
 }
 
 export const with_bg = {
-	args: selected_widget_note_with_bg
+	args: sample_notewidget_2
 }
