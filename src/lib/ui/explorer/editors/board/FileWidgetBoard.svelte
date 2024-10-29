@@ -13,7 +13,6 @@ let type = name.slice(name.lastIndexOf('.') + 1)
 <div
 	style={`width: ${rect[2]}px; height: ${rect[3]}px; top: ${rect[1]}px; left: ${rect[0]}px;`}
 	style:background-color={backgroundColor}
-	
 >
 	{name.split(".")[0]}
 	<span class="ribbon">{type}</span>
@@ -27,10 +26,10 @@ div {
 	border: 3px solid rgba(0, 0, 0, .1);
 }
 .ribbon {
-  position:absolute;
-  top:0;
-  right:0;
-  padding: 5px;
-  opacity: .3;
+	position:absolute;
+	top:0;
+	right:0;
+	padding: 5px;
+	opacity: .3;
 }
 </style>

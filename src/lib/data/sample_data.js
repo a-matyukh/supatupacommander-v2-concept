@@ -67,6 +67,22 @@ export const selected_widget = {
     ]
 }
 
+export const workspaces = [
+    {
+        name: "Working",
+        explorers: [
+            {
+                rect: [],
+                explorer: {
+                    storage_name,
+                    storage_tree,
+                    breadcrumbs,
+                    selected_widget
+                }
+            }
+        ]
+    }
+]
 
 
 // Sample widgets

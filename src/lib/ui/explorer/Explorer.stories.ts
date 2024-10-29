@@ -1,5 +1,5 @@
 import Explorer from './Explorer.svelte'
-import { storage_name, storage_tree, breadcrumbs, selected_widget } from '$lib/data/sample_data'
+import { workspaces } from '$lib/data/sample_data'
 
 export default {
 	title: 'Explorer/Explorer',
@@ -9,6 +9,9 @@ export default {
 
 export const Enabled = {
 	args: {
-		storage_name, storage_tree, breadcrumbs, selected_widget
+		storage_name: workspaces[0].explorers[0].explorer.storage_name,
+		storage_tree: workspaces[0].explorers[0].explorer.storage_tree,
+		breadcrumbs: workspaces[0].explorers[0].explorer.breadcrumbs,
+		selected_widget: workspaces[0].explorers[0].explorer.selected_widget,
 	}
 }

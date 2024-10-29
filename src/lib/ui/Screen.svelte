@@ -5,7 +5,7 @@
             <a href="/workspace">Go to fullscreen</a>
         </header>
         <main>
-            <Workspace />
+            <Workspace selected_workspace={workspaces[0]} />
         </main>
     </section>
 </div>
@@ -43,4 +43,5 @@ header {
 </style>
 <script>
 import Workspace from './workspace/Workspace.svelte'
+import { workspaces } from '$lib/data/sample_data'
 </script>
