@@ -1,4 +1,5 @@
 import FolderWidgetBoard from './FolderWidgetBoard.svelte'
+import { sample_folderwidget_1, sample_folderwidget_2 } from "$lib/data/sample_data"
 
 export default {
 	title: 'Widgets/Board/FolderWidgetBoard',
@@ -9,17 +10,10 @@ export default {
 	}
 }
 
-export const First = {
-	args: {
-		name: "My folder",
-		rect: [50, 50, 150, 200]
-	},
-};
+export const without_bg = {
+	args: sample_folderwidget_1
+}
 
-export const Second = {
-	args: {
-		name: "Sketches",
-		rect: [50, 50, 150, 200],
-		backgroundColor: "#cedba4"
-	},
+export const with_bg = {
+	args: sample_folderwidget_2
 }

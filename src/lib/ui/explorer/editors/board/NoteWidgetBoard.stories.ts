@@ -1,25 +1,19 @@
 import NoteWidgetBoard from './NoteWidgetBoard.svelte'
+import { sample_notewidget_1, sample_notewidget_2 } from "$lib/data/sample_data"
 
 export default {
     title: 'Widgets/Board/NoteWidgetBoard',
     component: NoteWidgetBoard,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
+		backgroundColor: { control: 'color' },
     }
 }
 
-export const First = {
-	args: { 
-		text: 'My note', 
-		rect: [50, 50, 150, 200] 
-	}
-};
+export const without_bg = {
+	args: sample_notewidget_1
+}
 
-export const Second = {
-	args: { 
-		text: 'My note', 
-		rect: [10, 30, 150, 200], 
-		backgroundColor: "#cedba4"
-	},
+export const with_bg = {
+	args: sample_notewidget_2
 }

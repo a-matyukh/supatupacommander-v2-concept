@@ -2,8 +2,7 @@ import Screen from './Screen.svelte'
 
 export default {
 	title: 'Screen',
-	component: Screen,
+	component: Screen
 }
 
-export const Enabled = {
-}
+export const Enabled = {}

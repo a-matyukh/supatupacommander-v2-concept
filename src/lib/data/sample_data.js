@@ -63,3 +63,36 @@ export const selected_widget = {
     { type: "note", text: 'So cool file manager 🤩', rect: [50, 200, 150, 100], backgroundColor: "#a4cedb" }
     ]
 }
+
+// Sample widgets
+export const sample_filewidget_1 = {
+    name: "README.md",
+    rect: [50, 50, 150, 200]
+}
+export const sample_filewidget_2 = {
+    name: "Life.txt",
+    rect: [50, 50, 150, 200],
+    backgroundColor: "#cedba4"
+}
+export const sample_folderwidget_1 = {
+    name: "My folder",
+    rect: [50, 50, 150, 200]
+}
+export const sample_folderwidget_2 = {
+    name: "Sketches",
+    rect: [50, 50, 150, 200],
+    backgroundColor: "#cedba4"
+}
+export const sample_notewidget_1 = { 
+    text: 'My note', 
+    rect: [50, 50, 150, 200] 
+}
+export const sample_notewidget_2 = { 
+    text: 'My note', 
+    rect: [10, 30, 150, 200], 
+    backgroundColor: "#cedba4"
+}
+
+// NoteEditor
+export const selected_widget_note = { text: 'My note 1' }
+export const selected_widget_note_with_bg = { text: 'My note 2', backgroundColor: "#cedba4" }

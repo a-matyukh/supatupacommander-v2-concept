@@ -1,5 +1,5 @@
 import StackEditor from './StackEditor.svelte'
-import { selected_widget } from "../../../data/sample_data"
+import { selected_widget } from "$lib/data/sample_data"
 
 export default {
 	title: 'Editors/StackEditor',

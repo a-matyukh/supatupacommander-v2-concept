@@ -1,4 +1,5 @@
 import FileWidgetStack from './FileWidgetStack.svelte'
+import { sample_filewidget_1, sample_filewidget_2 } from "$lib/data/sample_data"
 
 export default {
 	title: 'Widgets/Stack/FileWidgetStack',
@@ -10,14 +11,9 @@ export default {
 }
 
 export const First = {
-	args: {
-		name: "Readme.md",
-	},
-};
+	args: sample_filewidget_1
+}
 
 export const Second = {
-	args: {
-		name: "Life.txt",
-		backgroundColor: "#cedba4"
-	},
+	args: sample_filewidget_2
 }

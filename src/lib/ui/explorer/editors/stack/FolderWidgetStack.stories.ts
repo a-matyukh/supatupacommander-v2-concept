@@ -1,4 +1,5 @@
 import FolderWidgetStack from './FolderWidgetStack.svelte'
+import { sample_folderwidget_1, sample_folderwidget_2 } from "$lib/data/sample_data"
 
 export default {
 	title: 'Widgets/Stack/FolderWidgetStack',
@@ -10,14 +11,9 @@ export default {
 }
 
 export const First = {
-	args: {
-		name: "My folder",
-	},
-};
+	args: sample_folderwidget_1
+}
 
 export const Second = {
-	args: {
-		name: "Sketches",
-		backgroundColor: "#cedba4"
-	},
+	args: sample_folderwidget_2
 }
