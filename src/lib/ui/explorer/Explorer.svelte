@@ -24,7 +24,11 @@
     </main>
     <footer>
         <NavToggler nav_enabled={isNavOpen} ontoggle={() => isNavOpen = !isNavOpen} />
-        <span>Working <em>/</em> Sketches</span>
+        <p>
+            {#each breadcrumbs as crumb}
+                <span>{crumb}</span>
+            {/each}
+        </p>
     </footer>
 </section>
 
@@ -43,7 +47,8 @@ footer {
     padding: 12px;
     border-top: 1px solid #e6e6e6;
 }
-em {
+footer span:not(:last-child):after {
+    content: "/";
     margin: 10px;
     opacity: .3;
 }
@@ -76,5 +81,5 @@ import StorageTree from "./tree/StorageTree.svelte"
 import BoardEditor from './editors/BoardEditor.svelte'
 
 let isNavOpen = $state(true)
-const { storage_name, storage_tree, selected_widget } = $props()
+const { storage_name, storage_tree, breadcrumbs, selected_widget } = $props()
 </script>

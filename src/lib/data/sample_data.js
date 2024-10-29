@@ -34,6 +34,7 @@ export const storage_tree = [
     { name: 'My brilliant poems.note' },
     { name: 'So cool file manager 🤩.note' },
 ]
+export const breadcrumbs = ["Working", "Sketches"]
 
 export const selected_widget = {
     name: "Ideas",
