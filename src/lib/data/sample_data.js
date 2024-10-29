@@ -3,7 +3,9 @@ export const storage_name = "Working"
 export const storage_tree = [
     {
         name: 'My opuses',
-        files: [{ name: 'song.mp3' }]
+        files: [
+            { name: 'song.mp3' }
+        ]
     },
     {
         name: 'Sketches',

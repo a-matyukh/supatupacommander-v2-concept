@@ -1,8 +1,4 @@
 <section>
-    <header>
-        <NavToggler nav_enabled={isNavOpen} ontoggle={() => isNavOpen = !isNavOpen} />
-        <span>Working <em>/</em> Sketches</span>
-    </header>
     <main>
         {#if isNavOpen}
             <PaneGroup direction="horizontal">
@@ -26,6 +22,10 @@
             </article>
         {/if}
     </main>
+    <footer>
+        <NavToggler nav_enabled={isNavOpen} ontoggle={() => isNavOpen = !isNavOpen} />
+        <span>Working <em>/</em> Sketches</span>
+    </footer>
 </section>
 
 
@@ -33,15 +33,15 @@
 section {
     height: 100%;
     display: grid;
-    grid-template-rows: 50px auto;
+    grid-template-rows: auto 50px;
     background-color: #f5f5f5;
 }
-header {
+footer {
     display: flex;
     place-items: center;
     gap: 20px;
     padding: 12px;
-    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
 }
 em {
     margin: 10px;
