@@ -8,7 +8,7 @@
             <PaneGroup direction="horizontal">
                 <Pane defaultSize={20} minSize={15} maxSize={60}>
                     <nav>
-                        <StorageTree name="Working" tree={storage_tree} />
+                        <StorageTree name={storage_name} tree={storage_tree} />
                     </nav>
                 </Pane>
                 <PaneResizer>
@@ -75,7 +75,6 @@ import NavToggler from './NavToggler.svelte'
 import StorageTree from "./tree/StorageTree.svelte"
 import BoardEditor from './editors/BoardEditor.svelte'
 
-import { storage_tree, selected_widget } from '$lib/data/sample_data'
-
-let isNavOpen = true
+let isNavOpen = $state(true)
+const { storage_name, storage_tree, selected_widget } = $props()
 </script>

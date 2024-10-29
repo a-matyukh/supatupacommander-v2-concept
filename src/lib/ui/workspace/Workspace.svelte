@@ -1,7 +1,7 @@
 <section>
     <!-- SelectedWorkspace -->
     <main>
-        <Explorer />
+        <Explorer {storage_name} {storage_tree} {selected_widget} />
     </main>
     <!-- WorkspaceManager -->
     <footer>
@@ -35,4 +35,5 @@ footer {
 </style>
 <script>
 import Explorer from "../explorer/Explorer.svelte"
+import { storage_name, storage_tree, selected_widget } from '$lib/data/sample_data'
 </script>
