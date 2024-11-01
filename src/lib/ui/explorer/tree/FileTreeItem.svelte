@@ -1,8 +1,8 @@
 <script>
 import DocumentBlank from "carbon-icons-svelte/lib/DocumentBlank.svelte"
 import TextScale from "carbon-icons-svelte/lib/TextScale.svelte"
-export let name;
-$: type = name.slice(name.lastIndexOf('.') + 1);
+export let name
+$: type = name.slice(name.lastIndexOf('.') + 1)
 </script>
 
 <span>

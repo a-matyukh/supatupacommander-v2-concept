@@ -1,4 +1,4 @@
-<Folder {name} files={tree} expanded />
+<Folder {name} children={tree} expanded />
 
 <script>
 import Folder from './Folder.svelte'

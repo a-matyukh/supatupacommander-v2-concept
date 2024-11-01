@@ -1,14 +1,14 @@
 <script>
 import FolderIcon from "carbon-icons-svelte/lib/Folder.svelte"
-import FolderDetails from "carbon-icons-svelte/lib/FolderDetails.svelte";
+import FolderDetails from "carbon-icons-svelte/lib/FolderDetails.svelte"
 import File from './FileTreeItem.svelte'
 
-export let expanded = false;
-export let name;
-export let files;
+export let expanded = false
+export let name
+export let children
 
 function toggle() {
-	expanded = !expanded;
+	expanded = !expanded
 }
 </script>
 
@@ -23,9 +23,9 @@ function toggle() {
 
 {#if expanded}
 	<ul>
-		{#each files as file}
+		{#each children as file}
 			<li>
-				{#if file.files}
+				{#if file.children}
 					<svelte:self {...file} />
 				{:else}
 					<File {...file} />
